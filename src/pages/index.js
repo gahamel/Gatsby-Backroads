@@ -1,9 +1,10 @@
 import React from "react"
 import {Link} from 'gatsby'
 import Layout from '../components/Layout';
-
+import {FaAdobe} from 'react-icons/fa';
 export default () => (
     <Layout>
-      Hello world!<Link to="/blog/">Blog page</Link>
+      Hello world<Link to="/blog/">Blog page</Link>
+      <FaAdobe />
     </Layout>
 )

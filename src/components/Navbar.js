@@ -1,4 +1,6 @@
 import React from 'react'
+import {Link} from 'gatsby';
+import {FaRProject} from 'react-icons/fa';
 
 const Navbar = () => {
   return (
