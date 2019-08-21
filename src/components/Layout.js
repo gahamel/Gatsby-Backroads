@@ -4,11 +4,11 @@ import Footer from './Footer'
 import './layout.css';
 const Layout = (props) => {
   return (
-    <div>
+    <main>
       <Navbar />
         {props.children}
       <Footer />
-    </div>
+    </main>
   )
 }
 
