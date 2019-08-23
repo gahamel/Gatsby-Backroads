@@ -1,0 +1,32 @@
+import React from 'react'
+import Title  from '../Title';
+import styles from '../../css/contact.module.css'
+
+const Contact = () => {
+  return (
+    <section className={styles.contact}>
+      <Title title="contact" subtitle="us"/>
+      <div className={styles.center}>
+        <form action="https://formspree.io/gaetanhamelpro@gmail.com" method="POST" className={styles.form}>
+          <div>
+            <label htmlFor="name">name</label>
+            <input type="text" name="name" className={styles.formControl} placeholder="nom prenom"/>
+          </div>
+          <div>
+          <label htmlFor="email">email</label>
+            <input type="email" name="email" className={styles.formControl} placeholder="nom.prenom@exemple.com"/>
+          </div>
+          <div>
+          <label htmlFor="message">Message</label>
+            <textarea name="message" id="message" rows="10" className={styles.formControl} placeholder="hello there" />
+          </div>
+          <div>
+            <input type="submit"  value="submit here" className={styles.submit} />
+          </div>
+        </form>
+      </div>
+    </section>
+  )
+}
+
+export default Contact
